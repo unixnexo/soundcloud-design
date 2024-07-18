@@ -35,3 +35,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 /** test **/
+.test {
+    background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
+}
