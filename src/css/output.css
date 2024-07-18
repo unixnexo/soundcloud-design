@@ -556,6 +556,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -590,6 +594,26 @@ video {
 
 .top-\[46px\]{
   top: 46px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.-left-52{
+  left: -13rem;
+}
+
+.-left-80{
+  left: -20rem;
+}
+
+.-left-7{
+  left: -1.75rem;
+}
+
+.-left-72{
+  left: -18rem;
 }
 
 .mx-3{
@@ -882,6 +906,10 @@ video {
 
 .pr-7{
   padding-right: 1.75rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-lg{
