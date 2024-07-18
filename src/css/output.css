@@ -590,6 +590,10 @@ video {
   top: 46px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
