@@ -50,5 +50,4 @@ class FixedDiv extends HTMLElement {
       }
     }
 }
-
 customElements.define('fixed-wrapper', FixedDiv);

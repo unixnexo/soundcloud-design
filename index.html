@@ -43,15 +43,17 @@
                     <li class="text-soundcloud-text hover:text-white">For Artists</li>
                     <li class="text-soundcloud-text hover:text-white">Upload</li>
                     <!-- profile -->
-                    <li data-target="menu1" class="toggleButton flex relative justify-center items-center space-x-2 group bg-black h-[46px] w-[64px] select-none touch-none">
-                        <div class="overflow-hidden rounded-full size-[26px]">
-                            <img src="./public/imgs/prof.JPG" class="size-full object-cover" alt="profile image" />
+                    <li class="relative">
+                        <div data-target="menu1" class="toggleButton flex justify-center items-center space-x-2 group bg-black h-[46px] w-[64px] select-none touch-none">
+                            <div class="overflow-hidden rounded-full size-[26px]">
+                                <img src="./public/imgs/prof.JPG" class="size-full object-cover" alt="profile image" />
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-3 stroke-soundcloud-text group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-3 stroke-soundcloud-text group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
                         <!-- menu -->
-                        <fixed-wrapper id="menu1" class="absolute hidden top-[46px] -left-2 whitespace-nowrap bg-soundcloud-main-bg">
+                        <fixed-wrapper id="menu1" class="absolute hidden top-[46px] left-0 whitespace-nowrap bg-soundcloud-main-bg">
                             <ul class="rounded-b-sm border border-t-0 text-sm border-soundcloud-divide *:flex *:items-center *:justify-start *:space-x-1.5 *:pl-3 *:pr-3 *:py-1.5 hover:*:bg-soundcloud-hover">
                                 <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-4">
