@@ -10,7 +10,7 @@
 <body class="bg-soundcloud-main-bg text-soundcloud-text">
     
     <header class="bg-soundcloud-header">
-        <nav class="flex items-center justify-center">
+        <nav class="hidden md:flex items-center justify-center">
             <!-- left had side -->
             <div>
                 <ul class="flex items-center justify-center *:flex *:items-center *:justify-center divide-x-reverse divide-x divide-soundcloud-divide [&>*:not(:first-child)]:w-[104px] *:h-[46px] hover:[&>*:not(:first-child)]:text-white *:cursor-pointer">
@@ -25,9 +25,9 @@
                 </ul>
             </div>
             <!-- middle -->
-            <div>
-                <form class="relative mx-3 mr-6">
-                    <input class="bg-soundcloud-black px-2 pr-7 h-[28px] w-[300px] text-sm rounded-sm text-soundcloud-text outline-none border-none" type="search" placeholder="Search" />
+            <div class="w-[300px]">
+                <form class="relative mx-3 mr-6 w-full lg:w-auto">
+                    <input class="bg-soundcloud-black px-2 pr-7 h-[28px] w-full text-sm rounded-sm text-soundcloud-text outline-none border-none" type="search" placeholder="Search" />
                     <button type="submit" class="absolute top-1.5 mr-2 right-0">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -38,14 +38,14 @@
             <!-- right hand side -->
             <div>
                 <ul class="flex items-center space-x-5 *:cursor-pointer">
-                    <li class="text-soundcloud-orange hover:text-soundcloud-orange-light">Try Go+</li>
-                    <li class="text-soundcloud-orange hover:text-soundcloud-orange-light">Try Next Pro</li>
-                    <li class="text-soundcloud-text hover:text-white">For Artists</li>
-                    <li class="text-soundcloud-text hover:text-white">Upload</li>
+                    <li class="hidden xl:block text-soundcloud-orange hover:text-soundcloud-orange-light whitespace-nowrap">Try Go+</li>
+                    <li class="hidden xl:block text-soundcloud-orange hover:text-soundcloud-orange-light whitespace-nowrap">Try Next Pro</li>
+                    <li class="hidden lg:block text-soundcloud-text hover:text-white whitespace-nowrap">For Artists</li>
+                    <li class="hidden lg:block text-soundcloud-text hover:text-white whitespace-nowrap">Upload</li>
                     <div class="flex">
                         <!-- profile -->
                         <li class="relative">
-                            <div data-target="menu1" class="toggleButton flex justify-center items-center space-x-2 group h-[46px] w-[64px] select-none touch-none">
+                            <div data-target="menu1" class="toggleButton black-when-active flex justify-center items-center space-x-2 group h-[46px] w-[64px] select-none touch-none">
                                 <div class="overflow-hidden rounded-full size-[26px]">
                                     <img src="./public/imgs/prof.JPG" class="size-full object-cover" alt="profile image" />
                                 </div>
@@ -127,13 +127,13 @@
                         </li>
                         <!-- ring bell -->
                         <li class="relative">
-                            <div data-target="menu3" class="toggleButton group flex justify-center items-center size-[46px] select-none touch-none">
+                            <div data-target="menu3" class="toggleButton black-when-active group flex justify-center items-center size-[46px] select-none touch-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text group-hover:fill-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                                 </svg>
                             </div>
                             <!-- menu -->
-                            <fixed-wrapper id="menu3" class="absolute hidden w-[400px] max-h-[476px] top-[46px] -left-72 bg-soundcloud-main-bg">
+                            <fixed-wrapper id="menu3" class="absolute hidden w-[400px] max-h-[476px] top-[46px] right-0 bg-soundcloud-main-bg">
                                 <!-- header -->
                                 <div class="flex sticky top-0 justify-between items-center p-2 border border-soundcloud-divide border-t-0">
                                     <p class="text-white text-lg">Notifications</p>
@@ -303,13 +303,13 @@
                         </li>
                         <!-- messages -->
                         <li class="relative">
-                            <div data-target="menu4" class="toggleButton group flex justify-center items-center size-[46px] select-none touch-none">
+                            <div data-target="menu4" class="toggleButton black-when-active group flex justify-center items-center size-[46px] select-none touch-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text stroke-soundcloud-header group-hover:fill-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                 </svg> 
                             </div>    
                             <!-- menu -->
-                            <fixed-wrapper id="menu4" class="absolute hidden w-[400px] max-h-[476px] top-[46px] -left-72 bg-soundcloud-main-bg">
+                            <fixed-wrapper id="menu4" class="absolute hidden w-[400px] max-h-[476px] top-[46px] right-0 bg-soundcloud-main-bg">
                                 <!-- header -->
                                 <div class="flex sticky top-0 justify-between items-center p-2 border border-soundcloud-divide border-t-0">
                                     <p class="text-white text-lg">Messages</p>
@@ -348,7 +348,7 @@
                         </li>
                         <!-- 3 dot -->
                         <li class="relative">
-                            <div data-target="menu2" class="toggleButton group flex justify-center items-center size-[46px] select-none touch-none">
+                            <div data-target="menu2" class="toggleButton black-when-active group flex justify-center items-center size-[46px] select-none touch-none">
                                 <svg width="30" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="fill-soundcloud-text group-hover:fill-white">
                                     <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
                                 </svg>
@@ -361,6 +361,7 @@
                                     <li>Copyright</li>
                                     <hr class="border-b border-soundcloud-divide my-1"/>
                                     <li class="text-soundcloud-orange">Get SoundCloud Go+</li>
+                                    <li class="block xl:hidden text-soundcloud-orange">Try Next Pro</li>
                                     <li>Mobile apps</li>
                                     <li>For Creators</li>
                                     <li>Blog</li>
@@ -373,6 +374,9 @@
                                     <li>Subscription</li>
                                     <li>Settings</li>
                                     <li>Sign out</li>
+                                    <hr class="lg:hidden block border-b border-soundcloud-divide my-1"/>
+                                    <li class="lg:hidden block">For Artists</li>
+                                    <li class="lg:hidden block">Upload</li>
                                 </ul>
                             </fixed-wrapper>                                                 
                         </li>
@@ -387,5 +391,6 @@
     </main>
 
     <script defer src="./src/js/fixMenu.component.js"></script>
+    <script defer src="./src/js/script.js"></script>
 </body>
 </html>

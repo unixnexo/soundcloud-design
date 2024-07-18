@@ -3,6 +3,7 @@ class FixedDiv extends HTMLElement {
       super();
       this.toggle = this.toggle.bind(this);
       this.closeOnOutsideClick = this.closeOnOutsideClick.bind(this);
+      this.closeOnEscape = this.closeOnEscape.bind(this);
     }
 
     connectedCallback() {
@@ -13,6 +14,7 @@ class FixedDiv extends HTMLElement {
         }
       });
       document.addEventListener('click', this.closeOnOutsideClick);
+      document.addEventListener('keydown', this.closeOnEscape);
     }
 
     disconnectedCallback() {
@@ -23,6 +25,7 @@ class FixedDiv extends HTMLElement {
         }
       });
       document.removeEventListener('click', this.closeOnOutsideClick);
+      document.removeEventListener('keydown', this.closeOnEscape);
     }
 
     toggle(event) {
@@ -47,6 +50,16 @@ class FixedDiv extends HTMLElement {
       if (this.style.display === 'block' && !this.contains(event.target)) {
         this.style.display = 'none';
         this.removeAttribute('open');
+      }
+    }
+
+    closeOnEscape(event) {
+      if (event.key === 'Escape') {
+        const currentlyOpen = document.querySelector('fixed-wrapper[open]');
+        if (currentlyOpen) {
+          currentlyOpen.style.display = 'none';
+          currentlyOpen.removeAttribute('open');
+        }
       }
     }
 }
