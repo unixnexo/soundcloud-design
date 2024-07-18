@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-soundcloud-main-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="icon" type="image/x-icon" href="./public/imgs/soundlocudicon.png">
+    <title>Discover the top streamed music and songs online on Soundcloud</title>
+</head>
+<body class="bg-soundcloud-main-bg text-soundcloud-text">
+    
+    <header class="bg-soundcloud-header">
+        <nav class="flex items-center justify-center">
+            <!-- left had side -->
+            <div>
+                <ul class="flex items-center divide-x-reverse divide-x divide-soundcloud-divide [&>*:not(:first-child)]:px-8 [&>*:not(:first-child)]:py-3 hover:[&>*:not(:first-child)]:text-white *:cursor-pointer">
+                    <li class="bg-soundcloud-orange px-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="white" d="M10 33.018c.596 0 1.265 0 2 0V19.041c-1.11 1.001-1.699 2.212-2 3.121V33.018zM21 18.105c-.675-.316-1.752-.715-3-.837v15.749c.976 0 1.98 0 3 0V18.105zM14 33.018c.943 0 1.95 0 3 0V17.24c-1.173.03-2.171.23-3 .558V33.018zM4 23.953c-1.178.896-2 2.35-2 4.039 0 1.586.795 2.987 2 3.905V23.953zM40.995 22.016c-1.444 0-2.283.521-2.283.521s-.839-8.488-9.271-8.488c-4.906 0-6.83 2.704-7.441 3.897v15.071c8.825 0 18.297 0 18.297 0s5.869-.094 5.869-5.453C46.166 23.439 42.439 22.016 40.995 22.016zM8 23.1c-.395-.051-.842-.088-1.341-.088-.223 0-.441.037-.659.073v9.767c.423.104.861.166 1.311.166.151 0 .393 0 .689 0V23.1z"></path>
+                        </svg>
+                    </li>
+                    <li class="bg-soundcloud-black">Home</li>
+                    <li>Feed</li>
+                    <li class="">Library</li>
+                </ul>
+            </div>
+            <!-- middle -->
+            <div>
+                <form class="relative mx-3">
+                    <input class="bg-soundcloud-black px-2 pr-7 h-[28px] w-[300px] text-sm rounded-sm text-soundcloud-text outline-none border-none" type="search" placeholder="Search" />
+                    <button type="submit" class="absolute top-1.5 mr-2 right-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>                          
+                    </button>
+                </form>
+            </div>
+            <!-- right hand side -->
+            <div>
+                <ul class="flex items-center space-x-4 *:cursor-pointer">
+                    <li class="text-soundcloud-orange hover:text-soundcloud-orange-light">Try Go+</li>
+                    <li class="text-soundcloud-orange hover:text-soundcloud-orange-light">Try Next Pro</li>
+                    <li class="text-soundcloud-text hover:text-white">For Artists</li>
+                    <li class="text-soundcloud-text hover:text-white">Upload</li>
+                    <li class="flex items-center space-x-2 group">
+                        <div class="overflow-hidden rounded-full size-[26px]">
+                            <img src="./public/imgs/prof.JPG" class="size-full object-cover" alt="profile image" />
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-3 stroke-soundcloud-text group-hover:stroke-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>                          
+                    </li>
+                    <li class="group">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text group-hover:fill-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                        </svg>                          
+                    </li>
+                    <li class="group">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text stroke-soundcloud-header group-hover:fill-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>                                                 
+                    </li>
+                    <li class="group">
+                        <svg width="30" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="fill-soundcloud-text group-hover:fill-white">
+                            <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
+                        </svg>                                                   
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="">
+        <h1>hi bro</h1>
+    </main>
+
+</body>
+</html>
