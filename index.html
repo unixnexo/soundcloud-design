@@ -44,7 +44,7 @@
                     <li class="text-soundcloud-text hover:text-white">Upload</li>
                     <!-- profile -->
                     <li class="relative">
-                        <div data-target="menu1" class="toggleButton flex justify-center items-center space-x-2 group bg-black h-[46px] w-[64px] select-none touch-none">
+                        <div data-target="menu1" class="toggleButton flex justify-center items-center space-x-2 group h-[46px] w-[64px] select-none touch-none">
                             <div class="overflow-hidden rounded-full size-[26px]">
                                 <img src="./public/imgs/prof.JPG" class="size-full object-cover" alt="profile image" />
                             </div>
@@ -124,20 +124,211 @@
                             </ul>
                         </fixed-wrapper>
                     </li>
-                    <li class="group">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text group-hover:fill-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-                        </svg>                          
+                    <!-- ring bell -->
+                    <li class="relative">
+                        <div data-target="menu3" class="toggleButton group flex justify-center items-center size-[46px] select-none touch-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text group-hover:fill-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </div>
+                        <fixed-wrapper id="menu3" class="absolute w-[400px] max-h-[476px] top-[46px] -left-32 bg-soundcloud-main-bg">
+                            <!-- header -->
+                            <div class="flex sticky top-0 justify-between items-center p-2 border border-soundcloud-divide border-t-0">
+                                <p class="text-white text-lg">Notifications</p>
+                                <p class="text-sm text-soundcloud-text hover:text-white">Settings</p>
+                            </div>
+                            <ul class="custom-scrollbar max-h-[400px] overflow-y-auto rounded-b-sm border border-t-0 text-sm border-soundcloud-divide *:space-x-1.5 hover:[&>*:not(hr)]:bg-soundcloud-hover">
+                                <li class="flex items-center justify-start p-3">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof1.png" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Eat.me.and.feel.gay</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>13 Jun 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof2.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">noom</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>13 Jun 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof3.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Reni davila</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>3 Aug 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof4.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Ebi</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>1 Aug 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof5.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Daruosh</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>24 Jan 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof6.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Ayda69</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>2 Jan 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-start p-3 border-t border-soundcloud-divide">
+                                    <div class="shrink-0 size-[50px] rounded-full overflow-hidden">
+                                        <img src="./public/imgs/prof7.JPG" class="size-full object-cover" alt="profile picture" />
+                                    </div>
+                                    <div class="flex flex-col px-4">
+                                        <p><span class="text-white pr-1">Lualua</span> started following you</p>
+                                        <div class="flex items-center space-x-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                            </svg>                                              
+                                            <p>2 Jan 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="grow shrink-0">
+                                        <button class="flex items-center ml-auto border border-soundcloud-divide py-0.5 px-1.5 rounded-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-3.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                                            </svg>                                              
+                                            <span>Follow back</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fixed-wrapper>                         
                     </li>
                     <li class="group">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 fill-soundcloud-text stroke-soundcloud-header group-hover:fill-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                         </svg>                                                 
                     </li>
-                    <li class="group">
-                        <svg width="30" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="fill-soundcloud-text group-hover:fill-white">
-                            <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
-                        </svg>                                                   
+                    <!-- 3 dot -->
+                    <li class="relative">
+                        <div data-target="menu2" class="toggleButton group flex justify-center items-center size-[46px] select-none touch-none">
+                            <svg width="30" height="30" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="fill-soundcloud-text group-hover:fill-white">
+                                <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
+                            </svg>
+                        </div>
+                        <!-- menu -->
+                        <fixed-wrapper id="menu2" class="absolute hidden top-[46px] right-0 whitespace-nowrap bg-soundcloud-main-bg">
+                            <ul class="rounded-b-sm border border-t-0 text-sm border-soundcloud-divide *:space-x-1.5 *:pl-3 *:pr-6 [&>*:not(hr)]:py-1.5 hover:[&>*:not(hr)]:bg-soundcloud-hover">
+                                <li>About us</li>
+                                <li>Legal</li>
+                                <li>Copyright</li>
+                                <hr class="border-b border-soundcloud-divide my-1"/>
+                                <li class="text-soundcloud-orange">Get SoundCloud Go+</li>
+                                <li>Mobile apps</li>
+                                <li>For Creators</li>
+                                <li>Blog</li>
+                                <li>Jobs</li>
+                                <li>Developers</li>
+                                <hr class="border-b border-soundcloud-divide my-1"/>
+                                <li>Support</li>
+                                <li>Keyboard shortcuts</li>
+                                <hr class="border-b border-soundcloud-divide my-1"/>
+                                <li>Subscription</li>
+                                <li>Settings</li>
+                                <li>Sign out</li>
+                            </ul>
+                        </fixed-wrapper>                                                 
                     </li>
                 </ul>
             </div>
@@ -148,6 +339,6 @@
         <h1>hi bro</h1>
     </main>
 
-    <script defer src="./src/js/script.js"></script>
+    <script defer src="./src/js/fixMenu.component.js"></script>
 </body>
 </html>
