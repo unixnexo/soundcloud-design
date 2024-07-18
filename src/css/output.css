@@ -590,10 +590,6 @@ video {
   top: 46px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -602,6 +598,10 @@ video {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.mb-\[10000px\] {
+  margin-bottom: 10000px;
 }
 
 .ml-auto {
@@ -636,16 +636,20 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
 .mb-\[1000px\] {
   margin-bottom: 1000px;
 }
 
-.mb-\[10000px\] {
-  margin-bottom: 10000px;
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .line-clamp-1 {
@@ -692,6 +696,11 @@ video {
   height: 1.75rem;
 }
 
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
 .size-\[26px\] {
   width: 26px;
   height: 26px;
@@ -710,26 +719,6 @@ video {
 .size-full {
   width: 100%;
   height: 100%;
-}
-
-.size-20 {
-  width: 5rem;
-  height: 5rem;
-}
-
-.size-5 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.size-8 {
-  width: 2rem;
-  height: 2rem;
 }
 
 .h-\[28px\] {
@@ -809,6 +798,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -996,6 +989,10 @@ video {
      object-fit: cover;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1006,10 +1003,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-1 {
@@ -1050,6 +1043,14 @@ video {
   padding-right: 1.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1084,11 +1085,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1166,6 +1162,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /** test **/
 
+.\*\:mr-1 > * {
+  margin-right: 0.25rem;
+}
+
 .\*\:flex > * {
   display: flex;
 }
@@ -1240,6 +1240,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .hover\:\*\:fill-soundcloud-orange > *:hover {
   fill: #CC5000;
+}
+
+.hover\:\*\:text-soundcloud-text > *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(200 195 188 / var(--tw-text-opacity));
+}
+
+.hover\:\*\:text-white > *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:flex {
