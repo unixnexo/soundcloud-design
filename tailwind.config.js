@@ -11,6 +11,7 @@ module.exports = {
         "soundcloud-divide": "#454545",
         "soundcloud-text": "#C8C3BC",
         "soundcloud-orange-light": "#F1851A",
+        "soundcloud-hover": "#1F2223",
       }
     },
   },
