@@ -407,7 +407,7 @@
     <main>
         
         <div class="flex px-48 mt-10">
-            <div class="grow">hi mom</div>
+            <div class="grow mb-[10000px]">hi mom</div>
             <!-- side menu -->
             <div class="w-[345px]">
 
@@ -417,7 +417,7 @@
                 <button class="w-full border border-soundcloud-orange hover:bg-soundcloud-orange text-soundcloud-orange hover:text-white rounded-sm p-2.5 mt-5">View your Insights</button>
 
                 <!-- main content -->    
-                <div>
+                <div class="max-h-screen sticky top-0">
 
                     <!-- artists u should follow -->
                     <div class="flex justify-between mt-3">
@@ -548,34 +548,39 @@
                     </div>
                     <hr class="border-t border-soundcloud-divide my-1"/>
                     <div class="flex flex-col mt-2 space-y-5">
-                        
-                        <div class="flex items-center text-sm space-x-2">
-                            <div class="size-[50px] overflow-hidden">
+                        <div class="relative flex items-center text-sm space-x-2 group">
+                            <!-- img -->
+                            <div class="relative size-[50px] overflow-hidden flex items-center justify-center">
                                 <img src="./public/imgs/cover1.jpg" class="size-full object-cover" alt="music picture" />
+                                <div class="absolute hidden group-hover:flex items-center justify-center rounded-full size-8 cursor-pointer bg-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                    </svg> 
+                                </div>                                 
                             </div>
                             <div class="flex flex-col">
                                 <p class="hover:text-white">kandlus</p>
                                 <p class="hover:text-white">Sirvan - Khosravi - Bargard - 128k</p>
                                 <div class="flex space-x-3">
-                                    <div class="flex items-center">
+                                    <div class="flex items-center justify-center space-x-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
                                         </svg>                                          
                                         <span>107K</span>
                                     </div>
-                                    <div class="flex items-center">
+                                    <div class="flex items-center justify-center space-x-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                         </svg>                                                                                  
                                         <span>1,306</span>
                                     </div>
-                                    <div class="flex items-center justify-center">
+                                    <div class="flex items-center justify-center space-x-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
                                         </svg>                                                                                                                           
                                         <span>18</span>
                                     </div>
-                                    <div class="flex items-center justify-center">
+                                    <div class="flex items-center justify-center space-x-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
                                         </svg>                                                                                                                                                                   
@@ -583,8 +588,128 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- hover content -->
+                            <div class="absolute right-0 hidden group-hover:flex items-center justify-center space-x-1">
+                                <button class="border border-soundcloud-divide p-1 rounded-sm hover:border-soundcloud-orange hover:*:fill-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" class="size-3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>                                      
+                                </button>
+                                <button class="border border-soundcloud-divide p-1 rounded-sm">
+                                    <svg fill="white" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="size-3.5">
+                                        <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
+                                    </svg>                                                                       
+                                </button>
+                            </div>
                         </div>
-                        
+                        <div class="relative flex items-center text-sm space-x-2 group">
+                            <!-- img -->
+                            <div class="relative size-[50px] overflow-hidden flex items-center justify-center">
+                                <img src="./public/imgs/cover2.jpg" class="size-full object-cover" alt="music picture" />
+                                <div class="absolute hidden group-hover:flex items-center justify-center rounded-full size-8 cursor-pointer bg-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                    </svg> 
+                                </div>                                 
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="hover:text-white">Casual Jam Records</p>
+                                <p class="hover:text-white">YOTO - Wicked Game</p>
+                                <div class="flex space-x-3">
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                        </svg>                                          
+                                        <span>9K</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                        </svg>                                                                                  
+                                        <span>406</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                                        </svg>                                                                                                                           
+                                        <span>163</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                        </svg>                                                                                                                                                                   
+                                        <span>140</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- hover content -->
+                            <div class="absolute right-0 hidden group-hover:flex items-center justify-center space-x-1">
+                                <button class="border border-soundcloud-divide p-1 rounded-sm hover:border-soundcloud-orange hover:*:fill-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" class="size-3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>                                      
+                                </button>
+                                <button class="border border-soundcloud-divide p-1 rounded-sm">
+                                    <svg fill="white" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="size-3.5">
+                                        <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
+                                    </svg>                                                                       
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative flex items-center text-sm space-x-2 group">
+                            <!-- img -->
+                            <div class="relative size-[50px] overflow-hidden flex items-center justify-center">
+                                <img src="./public/imgs/cover3.jpg" class="size-full object-cover" alt="music picture" />
+                                <div class="absolute hidden group-hover:flex items-center justify-center rounded-full size-8 cursor-pointer bg-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                    </svg> 
+                                </div>                                 
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="hover:text-white">Lana Del Rey</p>
+                                <p class="hover:text-white">Salvatore</p>
+                                <div class="flex space-x-3">
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                                        </svg>                                          
+                                        <span>2M</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                        </svg>                                                                                  
+                                        <span>41.4K</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                                        </svg>                                                                                                                           
+                                        <span>862</span>
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                        </svg>                                                                                                                                                                   
+                                        <span>553</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- hover content -->
+                            <div class="absolute right-0 hidden group-hover:flex items-center justify-center space-x-1">
+                                <button class="border border-soundcloud-divide p-1 rounded-sm hover:border-soundcloud-orange hover:*:fill-soundcloud-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" class="size-3.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>                                      
+                                </button>
+                                <button class="border border-soundcloud-divide p-1 rounded-sm">
+                                    <svg fill="white" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" class="size-3.5">
+                                        <path d="M5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M12.5 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z M20 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5z"/>
+                                    </svg>                                                                       
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
