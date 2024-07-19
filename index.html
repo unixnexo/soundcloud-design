@@ -411,20 +411,19 @@
             <!-- main content - sliders -->
             <div class="grow overflow-hidden px-3 mr-5">
 
+                <!-- slider 1 -->
                 <h1 class="text-3xl font-bold mb-5">Recently Played</h1>
                 <div class="relative whitespace-nowrap">
-
                     <!-- previous btn -->
-                    <div class="absolute top-0 -left-3 h-full group pt-20 cursor-pointer select-none touch-none">
+                    <div id="prevBtn" class="absolute top-0 -left-3 h-full group pt-20 cursor-pointer select-none touch-none">
                         <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                             </svg>                              
                         </div>
                     </div>
-
                     <!-- slider -->
-                    <div class="flex overflow-x-auto scrollbar-hide space-x-4">
+                    <div id="slider" class="flex overflow-x-auto space-x-4 scrollbar-hide">
                         <div class="flex flex-col w-[170px]">
                             <!-- img and overlay -->
                             <div class="size-[170px] overflow-hidden">
@@ -530,16 +529,14 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- next btn -->
-                    <div class="absolute top-0 -right-3 h-full group pt-20 cursor-pointer select-none touch-none">
+                    <div id="nextBtn" class="absolute top-0 -right-3 h-full group pt-20 cursor-pointer select-none touch-none">
                         <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                             </svg>                                                           
                         </div>
                     </div>
-
                 </div>
 
             </div>
