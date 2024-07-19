@@ -31,10 +31,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
+.cut-circle {
+  clip-path: polygon(50% 0, 50% 47%, 65% 100%, 100% 100%, 100% 0);
+}
 
 
 
 /** test **/
 .test {
-    background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
+  background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
 }
+
