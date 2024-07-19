@@ -24,5 +24,9 @@ document.querySelectorAll('.black-when-active').forEach(el => {
 });
 
 
-////////// test //////////////
 
+
+////////// test //////////////
+document.addEventListener('drag', () => {
+  console.log('draaagin');
+});

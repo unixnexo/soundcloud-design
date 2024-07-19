@@ -30,6 +30,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
 
 .cut-circle {
   clip-path: polygon(50% 0, 50% 47%, 65% 100%, 100% 100%, 100% 0);
