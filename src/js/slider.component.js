@@ -41,7 +41,7 @@ class Slider extends HTMLElement {
             <div class="relative whitespace-nowrap">
 
                 <!-- previous btn -->
-                <div class="prevBtn md:block hidden absolute top-0 -left-3 h-full pr-10 group pt-20 cursor-pointer select-none touch-none z-30">
+                <div class="prevBtn absolute top-0 -left-3 h-full pr-10 group pt-20 cursor-pointer select-none touch-none z-30">
                     <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -49,7 +49,7 @@ class Slider extends HTMLElement {
                     </div>
                 </div>
                 <!-- next btn -->
-                <div class="nextBtn md:block hidden absolute top-0 -right-3 h-full pl-10 group pt-20 cursor-pointer select-none touch-none z-30">
+                <div class="nextBtn absolute top-0 -right-3 h-full pl-10 group pt-20 cursor-pointer select-none touch-none z-30">
                     <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -57,7 +57,7 @@ class Slider extends HTMLElement {
                     </div>
                 </div>
 
-                <div class="slider overflow-x-auto scrollbar-hide pl-3">
+                <div class="slider overflow-x-auto scrollbar-hide pl-3 md:pl-0">
                     <div class="inner-slider flex space-x-3 md:space-x-4 transition-transform will-change-auto">
                     ${sliderItems}
                     </div>
@@ -70,6 +70,8 @@ class Slider extends HTMLElement {
         const slider = this.querySelector('.slider');
         const prevBtn = this.querySelector('.prevBtn');
         const nextBtn = this.querySelector('.nextBtn');
+        prevBtn.classList.add('hidden');
+        nextBtn.classList.add('hidden');
 
         function updateButtonStates() {
             // Check if the slider has reached the end of the left

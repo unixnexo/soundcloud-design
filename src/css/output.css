@@ -1561,6 +1561,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-left: 0.5rem;
   }
 
+  .md\:pl-1 {
+    padding-left: 0.25rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
