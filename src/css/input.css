@@ -50,3 +50,34 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
 }
 
+#nextBtn:hover ~ #slider > #inner-slider {
+  animation: slightScrollToRight 0.5s;
+}
+
+#prevBtn:hover ~ #slider > #inner-slider {
+  animation: slightScrollToLeft 0.5s;
+}
+
+@keyframes slightScrollToRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slightScrollToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

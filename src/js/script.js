@@ -59,3 +59,18 @@ prevBtn.addEventListener('click', () => {
 });
 
 slider.addEventListener('scroll', () => updateButtonStates());
+
+///
+// nextBtn.addEventListener('mouseenter', () => {
+//   slider.scrollBy({left: 10, behavior: 'smooth'});
+//     setTimeout(() => {
+//       slider.scrollBy({left: -10, behavior: 'smooth'});
+//     }, 200);
+// });
+
+// prevBtn.addEventListener('mouseenter', () => {
+//   slider.scrollBy({left: -10, behavior: 'smooth'});
+//     setTimeout(() => {
+//       slider.scrollBy({left: 10, behavior: 'smooth'});
+//     }, 200);
+// });
