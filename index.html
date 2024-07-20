@@ -406,15 +406,14 @@
 
     <main>
         
-        <div class="flex px-10 2xl:px-48 mt-10 mb-14">
+        <div class="flex md:px-10 2xl:px-48 mt-10 mb-14">
 
             <!-- main content - sliders -->
-            <div class="grow overflow-hidden px-3 mr-5">
+            <div class="grow overflow-hidden pl-3 md:px-3 lg:mr-5">
 
                 <!-- slider 1 -->
-                <h1  class="text-3xl font-bold mb-5">Recently Played</h1>
-                <div class="relative whitespace-nowrap">
-                    <!-- previous btn -->
+                <!-- <h1 class="text-2xl md:text-3xl font-bold mb-2.5 md:mb-5 text-white">Recently Played</h1> -->
+                <!-- <div class="relative whitespace-nowrap">
                     <div id="prevBtn" class="absolute top-0 -left-3 h-full group pt-20 cursor-pointer select-none touch-none z-30">
                         <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
@@ -422,7 +421,6 @@
                             </svg>                              
                         </div>
                     </div>
-                    <!-- next btn -->
                     <div id="nextBtn" class="absolute top-0 -right-3 h-full group pt-20 cursor-pointer select-none touch-none z-30">
                         <div class="size-[32px] flex items-center justify-center bg-soundcloud-main-bg rounded-sm border border-soundcloud-divide group-hover:border-soundcloud-orange group-hover:*:stroke-soundcloud-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
@@ -430,103 +428,84 @@
                             </svg>                                                           
                         </div>
                     </div>
-                    <!-- slider -->
                     <div id="slider" class="overflow-x-auto scrollbar-hide">
-                        <div id="inner-slider" class="flex space-x-4 transition-transform will-change-auto">
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                        <div id="inner-slider" class="flex space-x-3 md:space-x-4 transition-transform will-change-auto">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:size-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover1.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">damn nigga!</p>
                                     <p class="text-xs">unixnexo</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover2.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Allrizo 1-Popcast episode 1-Remix for car, gym, and your store😎-ریمیکس خفن برای ماشین باشگاه مغازه</p>
                                     <p class="text-xs">unixnexo</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover3.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Gracing dreams on night</p>
                                     <p class="text-xs">Luluia minio</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover5.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">why me!</p>
                                     <p class="text-xs">Alexander lucas</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover7.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Fuck you mother fucker</p>
                                     <p class="text-xs">I fuck your sister</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover7.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Fuck you mother fucker</p>
                                     <p class="text-xs">I fuck your sister</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover7.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Fuck you mother fucker</p>
                                     <p class="text-xs">I fuck your sister</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover7.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Fuck you mother fucker</p>
                                     <p class="text-xs">I fuck your sister</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-[170px]">
-                                <!-- img and overlay -->
-                                <div class="size-[170px] overflow-hidden">
+                            <div class="flex flex-col w-[130px] md:w-[170px]">
+                                <div class="w-[130px] md:w-[170px] overflow-hidden">
                                     <img src="./public/imgs/cover7.jpg" class="size-full object-cover" alt="song cover" />
                                 </div>
-                                <!-- infos -->
                                 <div>
                                     <p class="text-white line-clamp-1">Fuck you mother fucker</p>
                                     <p class="text-xs">I fuck your sister</p>
@@ -534,8 +513,17 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
+                </div> -->
+
+                <h2 class="text-2xl md:text-3xl font-bold mb-2.5 md:mb-5 text-white mt-10">Recently Fucked</h2>
+                <custom-slider>
+                    <slider-item img="./public/imgs/cover1.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                    <slider-item img="./public/imgs/cover2.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                    <slider-item img="./public/imgs/cover3.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                    <slider-item img="./public/imgs/cover5.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                    <slider-item img="./public/imgs/cover1.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                    <slider-item img="./public/imgs/cover7.jpg" main-text="From web compoent mother fu ker" secondary-text="hi mom! imade it"></slider-item>
+                </custom-slider>
 
             </div>
 
@@ -1172,6 +1160,7 @@
     </main>
 
     <script defer src="./src/js/fixMenu.component.js"></script>
+    <script defer src="./src/js/slider.component.js"></script>
     <script defer src="./src/js/script.js"></script>
 </body>
 </html>
