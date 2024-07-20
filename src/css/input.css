@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body, html {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* clears the ‘X’ input search from Internet Explorer */
@@ -43,13 +43,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   clip-path: polygon(50% 0, 50% 47%, 65% 100%, 100% 100%, 100% 0);
 }
 
-
-
-/** test **/
-.test {
-  background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
-}
-
+/**
+* custom slider
+**/
 .nextBtn:hover ~ .slider > .inner-slider {
   animation: slightScrollToRight 0.5s;
 }
@@ -81,3 +77,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transform: translateX(0);
   }
 }
+
+
+
+/** test **/
+.test {
+  background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
+}
+

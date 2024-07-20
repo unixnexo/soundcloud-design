@@ -16,8 +16,8 @@ class SliderItem extends HTMLElement {
             </div>
             <!-- infos -->
             <div>
-                <p class="text-white line-clamp-1">${mainText}</p>
-                <p class="text-xs">${secondaryText}</p>
+                <p class="text-white whitespace-normal line-clamp-1">${mainText}</p>
+                <p class="text-xs  whitespace-normal line-clamp-1">${secondaryText}</p>
             </div>
         </div>
         `
