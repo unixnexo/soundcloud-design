@@ -69,6 +69,29 @@ volumeSvg.addEventListener('click', () => {
 });
 
 
+/**
+ * next up menu
+ */
+const nextUpMenu = document.getElementById('nextup-menu');
+const nextUpMenuToggler = document.getElementById('nextup-menu-toggler');
+const closeNextUpMenu = document.getElementById('close-nextup-menu');
+nextUpMenuToggler.addEventListener('click', () => {
+  if (nextUpMenu.hasAttribute('open')) {
+    nextUpMenu.classList.add('hidden');
+    nextUpMenu.removeAttribute('open');
+  } else {
+    nextUpMenu.classList.remove('hidden');
+    nextUpMenu.setAttribute('open', '');
+  }
+});
+
+closeNextUpMenu.addEventListener('click', () => {
+  if (nextUpMenu.hasAttribute('open')) {
+    nextUpMenu.classList.add('hidden');
+    nextUpMenu.removeAttribute('open');
+  }
+});
+
 
 
 ////////// test //////////////
