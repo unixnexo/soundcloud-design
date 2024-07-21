@@ -37,6 +37,39 @@ rangePlayerInput.addEventListener('input', () => {
 });
 
 
+/**
+ * volume changer
+ */
+const volumeRangeInput = document.getElementById('volume-range');
+const volumeSvg = document.getElementById('volume-svg');
+const volumeSvgPath1 = document.querySelector('.path1');
+const volumeSvgPath2 = document.querySelector('.path2');
+const volumeSvgPathX = document.querySelector('.pathX');
+volumeRangeInput.addEventListener('input', () => {
+  if (volumeRangeInput.value <= 80) {
+    volumeSvgPath1.classList.add('hidden');
+  } else {
+    volumeSvgPath1.classList.remove('hidden');
+  }
+
+  if (volumeRangeInput.value == 0) {
+    volumeSvgPath2.classList.add('hidden');
+    volumeSvgPathX.classList.remove('hidden');
+  } else {
+    volumeSvgPath2.classList.remove('hidden');
+    volumeSvgPathX.classList.add('hidden');
+  }
+});
+
+volumeSvg.addEventListener('click', () => {
+  volumeSvgPath1.classList.toggle('hidden');
+  volumeSvgPath2.classList.toggle('hidden');
+  volumeSvgPathX.classList.toggle('hidden');
+  volumeRangeInput.value = volumeRangeInput.value == 0 ? '100' : '0';
+});
+
+
+
 
 ////////// test //////////////
 /**
