@@ -87,6 +87,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
 }
 
+.outer-shadow-allaround {
+  box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+
 
 /**
 * range input for player
@@ -119,6 +123,27 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   rotate: 90deg;
 }
 
+
+/**
+* next up menu
+**/
+@supports selector(::-webkit-scrollbar) {
+  .custom-scrollbar-safari-like::-webkit-scrollbar {
+    background: theme('colors.soundcloud-main-bg');
+    width: 10px;
+  }
+  .custom-scrollbar-safari-like::-webkit-scrollbar-thumb {
+    background: theme('colors.soundcloud-second-higher-bg');
+    border-radius: 20px;
+  }
+  .custom-scrollbar-safari-like::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar-safari-like {
+    scrollbar-gutter: stable;
+  }
+}
 
 
 /** test **/
