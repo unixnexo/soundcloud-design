@@ -1426,11 +1426,11 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64);
 }
 
-/** test **/
-
-.test {
+.outer-shadow {
   background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);
 }
+
+/** test **/
 
 .\*\:z-20 > * {
   z-index: 20;
@@ -1523,10 +1523,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgb(204 80 0 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-soundcloud-orange:hover {
-  fill: #CC5000;
-}
-
 .hover\:text-soundcloud-orange-light:hover {
   --tw-text-opacity: 1;
   color: rgb(241 133 26 / var(--tw-text-opacity));
@@ -1542,11 +1538,11 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgb(31 34 35 / var(--tw-bg-opacity));
 }
 
-.hover\:\*\:fill-soundcloud-orange > *:hover {
+.\*\:hover\:fill-soundcloud-orange:hover > * {
   fill: #CC5000;
 }
 
-.\*\:hover\:fill-soundcloud-orange:hover > * {
+.hover\:\*\:fill-soundcloud-orange > *:hover {
   fill: #CC5000;
 }
 
