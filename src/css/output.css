@@ -586,6 +586,10 @@ video {
   bottom: 66px;
 }
 
+.bottom-\[68px\] {
+  bottom: 68px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -823,6 +827,10 @@ video {
   height: 100%;
 }
 
+.h-px {
+  height: 1px;
+}
+
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -867,6 +875,10 @@ video {
   width: 69px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-\[97vw\] {
   width: 97vw;
 }
@@ -885,6 +897,11 @@ video {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1197,6 +1214,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1433,6 +1455,22 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #custom-range-wrapper:hover .custom-range::-webkit-slider-runnable-track {
   opacity: 1;
+}
+
+/**
+* volume changer
+**/
+
+#volume-con::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  rotate: 90deg;
 }
 
 /** test **/
