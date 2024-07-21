@@ -78,10 +78,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 }
 
+.inner-bottom-shadow {
+  -webkit-box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64); 
+  box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64);
+}
 
 
 /** test **/
 .test {
   background: linear-gradient(90deg, rgba(24, 26, 27, 0.1), rgb(24, 26, 27) 17px);;
 }
+
 
