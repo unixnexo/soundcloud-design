@@ -1469,7 +1469,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #333 transparent transparent transparent;
+  border-color: #454545 transparent transparent transparent;
   rotate: 90deg;
 }
 
