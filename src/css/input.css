@@ -79,7 +79,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .inner-bottom-shadow {
-  -webkit-box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64); 
+  -webkit-box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64);
   box-shadow: inset 1px -50px 24px -17px rgba(0,0,0,0.64);
 }
 
@@ -88,6 +88,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
+/**
+* range input for player
+**/
+.custom-range {
+  --slider-track-opacity: 0;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+  opacity: var(--slider-track-opacity);
+}
+
+#custom-range-wrapper:hover .custom-range::-webkit-slider-runnable-track {
+  opacity: 1;
+}
+
+
 
 /** test **/
-

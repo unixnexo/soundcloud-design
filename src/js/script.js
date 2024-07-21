@@ -24,6 +24,18 @@ document.querySelectorAll('.black-when-active').forEach(el => {
 });
 
 
+/**
+ * range input for player
+ */
+const rangePlayerInput = document.querySelector('.custom-range');
+rangePlayerInput.addEventListener('input', () => {
+  if (rangePlayerInput.value >= 100 || rangePlayerInput.value <= 0) {
+    rangePlayerInput.style.setProperty('--slider-track-opacity', '1');
+  } else {
+    rangePlayerInput.style.setProperty('--slider-track-opacity', '0');
+  }
+});
+
 
 
 ////////// test //////////////
@@ -66,4 +78,5 @@ document.querySelectorAll('.black-when-active').forEach(el => {
 // });
 
 // id="hover-overlay-${menuId}"
+
 
