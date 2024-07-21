@@ -1555,6 +1555,10 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 1.25rem;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
