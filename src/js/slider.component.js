@@ -94,7 +94,7 @@ class Slider extends HTMLElement {
                 </div>
 
                 <div class="slider overflow-x-auto overflow-y-hidden scrollbar-hide pl-3 md:pl-0">
-                    <div class="inner-slider flex space-x-3 md:space-x-4 transition-transform will-change-auto md:h-64">
+                    <div class="inner-slider flex space-x-3 md:space-x-4 md:h-64">
                     ${sliderItems}
                     </div>
                 </div>
@@ -104,6 +104,7 @@ class Slider extends HTMLElement {
 
         // logic for btns state and scrollbar
         const slider = this.querySelector('.slider');
+        const innerSlider = this.querySelector('.inner-slider');
         const prevBtn = this.querySelector('.prevBtn');
         const nextBtn = this.querySelector('.nextBtn');
         prevBtn.classList.add('hidden');
@@ -139,6 +140,21 @@ class Slider extends HTMLElement {
         prevBtn.addEventListener('click', () => {
             slider.scrollBy({left: -500, behavior: 'smooth'});
             updateButtonStates();
+        });
+
+        // animation fully executes
+        nextBtn.addEventListener('mouseenter', () => {
+            innerSlider.classList.add('animate-right');
+            innerSlider.addEventListener('animationend', () => {
+            innerSlider.classList.remove('animate-right');
+            }, { once: true });
+        });
+
+        prevBtn.addEventListener('mouseenter', () => {
+            innerSlider.classList.add('animate-left');
+            innerSlider.addEventListener('animationend', () => {
+              innerSlider.classList.remove('animate-left');
+            }, { once: true });
         });
     }
 }

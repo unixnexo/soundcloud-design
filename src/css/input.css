@@ -46,11 +46,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /**
 * custom slider
 **/
-.nextBtn:hover ~ .slider > .inner-slider {
+.animate-right {
   animation: slightScrollToRight 0.5s;
 }
 
-.prevBtn:hover ~ .slider > .inner-slider {
+.animate-left {
   animation: slightScrollToLeft 0.5s;
 }
 
@@ -90,5 +90,4 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 /** test **/
-
 
