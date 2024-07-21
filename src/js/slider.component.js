@@ -17,7 +17,7 @@ class SliderItem extends HTMLElement {
                     <img src="${imgUrl}" class="size-full object-cover" alt="${mainText}" />
                 </div>
                 <!-- overlay -->
-                <div class="absolute hidden group-hover:flex flex-col items-center justify-center size-full inner-bottom-shadow">
+                <div id="hover-overlay-${menuId}" class="absolute hidden group-hover:flex flex-col items-center justify-center size-full inner-bottom-shadow">
                     <div class="rounded-full bg-soundcloud-orange size-[55px] flex items-center justify-center absolute cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
