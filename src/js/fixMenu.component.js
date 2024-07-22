@@ -72,6 +72,7 @@ class FixedDiv extends HTMLElement {
       this.toggle = this.toggle.bind(this);
       this.closeOnOutsideClick = this.closeOnOutsideClick.bind(this);
       this.closeOnEscape = this.closeOnEscape.bind(this);
+    //   this.test = this.test.bind(this);
       // this.adjustPosition = this.adjustPosition.bind(this);
   }
 
@@ -97,29 +98,54 @@ class FixedDiv extends HTMLElement {
       document.removeEventListener('keydown', this.closeOnEscape);
   }
 
-  toggle(event) {
-      event.stopPropagation();
+    toggle(event) {
+        event.stopPropagation();
+        console.log('from toggle');
 
-      const currentlyOpen = document.querySelector('fixed-wrapper[open]');
-      if (currentlyOpen && currentlyOpen !== this) {
-          currentlyOpen.removeAttribute('open');
-          currentlyOpen.style.display = 'none';
-      }
+        const currentlyOpen = document.querySelector('fixed-wrapper[open]');
+        if (currentlyOpen && currentlyOpen !== this) {
+            console.log(currentlyOpen.id);
+            currentlyOpen.removeAttribute('open');
+            currentlyOpen.style.display = 'none';   
 
-      if (this.style.display === 'none' || this.style.display === '') {
+            //
+            const currentlyOpenOverlay = document.getElementById(`hover-overlay-${currentlyOpen.id}`);
+            currentlyOpenOverlay.classList.add('hidden');
+            currentlyOpenOverlay.classList.remove('flex');
+        }
+
+        //
+        const overlay = document.getElementById(`hover-overlay-${this.id}`);
+
+        if (this.style.display === 'none' || this.style.display === '') {
           this.style.display = 'block';
           this.setAttribute('open', '');
-        //   this.adjustPosition(event.target);
-      } else {
+
+          //
+          overlay.classList.remove('hidden');
+          overlay.classList.add('flex');
+
+        } else {
           this.style.display = 'none';
           this.removeAttribute('open');
-      }
-  }
+
+          //
+          overlay.classList.add('hidden');
+          overlay.classList.remove('flex');
+        }
+    }
 
   closeOnOutsideClick(event) {
+        const overlay = document.getElementById(`hover-overlay-${this.id}`);
       if (this.style.display === 'block' && !this.contains(event.target)) {
           this.style.display = 'none';
           this.removeAttribute('open');
+          // test
+          if (overlay) {
+            overlay.classList.add('hidden');
+            overlay.classList.remove('flex');
+            }
+          //test 
       }
   }
 
