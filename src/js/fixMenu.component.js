@@ -110,8 +110,10 @@ class FixedDiv extends HTMLElement {
 
             //
             const currentlyOpenOverlay = document.getElementById(`hover-overlay-${currentlyOpen.id}`);
-            currentlyOpenOverlay.classList.add('hidden');
-            currentlyOpenOverlay.classList.remove('flex');
+            if (currentlyOpenOverlay) {
+                currentlyOpenOverlay.classList.add('hidden');
+                currentlyOpenOverlay.classList.remove('flex');
+            }
         }
 
         //
@@ -122,16 +124,20 @@ class FixedDiv extends HTMLElement {
           this.setAttribute('open', '');
 
           //
-          overlay.classList.remove('hidden');
-          overlay.classList.add('flex');
+          if (overlay) {
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+          }
 
         } else {
           this.style.display = 'none';
           this.removeAttribute('open');
 
           //
-          overlay.classList.add('hidden');
-          overlay.classList.remove('flex');
+          if (overlay) {
+            overlay.classList.add('hidden');
+            overlay.classList.remove('flex');
+          }
         }
     }
 
