@@ -406,10 +406,15 @@
 
     <main>
         
+        <!-- loader -->
+        <div id="loader-con" class="fixed top-1/2 left-[calc(50%-250px)]">
+            <img src="./public/imgs/ios-spinner.svg" alt="">
+        </div>
+
         <div class="flex px-0 md:px-10 2xl:px-44 mb-14 md:divide-x divide-soundcloud-divide">
 
             <!-- main content - sliders -->
-            <div class="grow overflow-hidden pt-10 md:px-3 lg:mr-5 mb-32 md:mb-10 md:divide-y divide-soundcloud-divide">
+            <div id="sliders-con" class="opacity-0 grow overflow-hidden pt-10 md:px-3 lg:mr-5 mb-32 md:mb-10 md:divide-y divide-soundcloud-divide transition-opacity ease-linear">
 
                 <h1 class="text-2xl md:text-3xl font-bold mb-2.5 md:mb-5 text-white pl-3 md:pl-0">Recently played</h1>
                 <custom-slider>

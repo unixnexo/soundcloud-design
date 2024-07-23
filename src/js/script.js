@@ -1,4 +1,13 @@
 /**
+ * loader
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('sliders-con').classList.remove('opacity-0');
+  document.getElementById('loader-con').classList.add('hidden');
+});
+
+
+/**
  * Ui activation for top menu
  */
 document.querySelectorAll('.black-when-active').forEach(el => {
